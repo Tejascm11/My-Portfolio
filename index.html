@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tejas CM — Portfolio</title>
+  <meta name="description" content="Tejas CM — Engineering Graduate Portfolio">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="dark">
+
+  <div class="cursor-glow"></div>
+  <div class="noise"></div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="nav">
+
+    <a class="brand" href="#home">
+      &lt;TCM&gt;<span>.</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+
+      <!-- Simple day / night theme switch -->
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode"
+        aria-pressed="false">
+        <span class="theme-icon moon-icon" aria-hidden="true">
+          <span class="moon-body"></span>
+          <span class="star star-1">✦</span>
+          <span class="star star-2">✦</span>
+          <span class="star star-3">·</span>
+        </span>
+        <span class="theme-icon sun-icon" aria-hidden="true">
+          <span class="sun-core"></span>
+          <span class="sun-ray ray-1"></span>
+          <span class="sun-ray ray-2"></span>
+          <span class="sun-ray ray-3"></span>
+          <span class="sun-ray ray-4"></span>
+          <span class="sun-ray ray-5"></span>
+          <span class="sun-ray ray-6"></span>
+          <span class="sun-ray ray-7"></span>
+          <span class="sun-ray ray-8"></span>
+        </span>
+      </button>
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero section">
+
+      <div class="cs-keywords" aria-hidden="true">
+        <span>Python</span>
+        <span>JavaScript</span>
+        <span>SQL</span>
+        <span>FullStack</span>
+        <span>ML</span>
+        <span>AI</span>
+        <span>Git</span>
+        <span>HTML</span>
+        <span>CSS</span>
+      </div>
+
+      <!-- Social sidebar is visible only within the hero section -->
+      <aside class="social-sidebar" aria-label="Social links">
+        <a href="https://github.com/Tejascm11" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <span class="social-svg">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.24c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.74.08-.74 1.2.09 1.84 1.23 1.84 1.23 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .5Z" />
+            </svg>
+          </span>
+        </a>
+        <a href="https://www.linkedin.com/in/cmtejas" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <span class="social-text">in</span>
+        </a>
+        <a href="https://www.instagram.com/tejas_c_m11" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <span class="social-svg">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5Zm5.25-3.25a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25Z" />
+            </svg>
+          </span>
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ctejasm@gmail.com" target="_blank"
+          rel="noopener noreferrer" class="email-icon" aria-label="Email" title="Email">
+          <span class="social-svg">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.51l9 5.62 9-5.62V7H3Zm18 10V9.87l-8.47 5.29a1 1 0 0 1-1.06 0L3 9.87V17h18Z" />
+            </svg>
+          </span>
+        </a>
+      </aside>
+
+      <div class="hero-copy reveal">
+
+        <p class="eyebrow">
+          <span>Hello, I'm</span>
+        </p>
+
+        <h1>
+          Tejas<br>
+          <span>CM</span>
+        </h1>
+
+        <p class="role">
+          Engineering Graduate <b>·</b> Creative Builder
+        </p>
+
+        <p class="hero-text">
+          Exploring software development and building practical projects.
+        </p>
+
+        <div class="hero-actions">
+          <a class="pill primary" href="#projects">
+            View Projects <span>↗</span>
+          </a>
+
+          <a class="pill" href="#contact">
+            Contact Me
+          </a>
+
+          <a class="resume-button" href="Resume.pdf" download="Tejas_CM_Resume.pdf"
+            aria-label="Download Tejas CM resume">
+            <span>Resume</span>
+            <span class="resume-icon">↓</span>
+          </a>
+        </div>
+
+      </div>
+
+
+      <div class="hero-visual reveal delay-1">
+
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+
+        <div class="portrait-card">
+
+          <div class="portrait-placeholder">
+            <img src="profile.jpg" alt="Tejas CM profile picture">
+          </div>
+
+        </div>
+
+        <div class="opportunity-bubble">
+          <span class="bubble-dot"></span>
+          <span>Open to Opportunities</span>
+        </div>
+
+        <div class="floating-tag tag-one">BUILD</div>
+        <div class="floating-tag tag-two">LEARN</div>
+        <div class="floating-tag tag-three">PRACTICE</div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section about">
+
+      <div class="section-heading reveal">
+
+        <p class="eyebrow">01 / About</p>
+
+        <h2>
+          Building with<br>
+          <span>curiosity.</span>
+        </h2>
+
+      </div>
+
+
+      <div class="about-grid">
+
+        <div class="about-text reveal">
+
+          <p>
+            I’m an Information Science engineering graduate
+            interested in software development, Python
+            and practical AI applications.
+          </p>
+
+          <p>
+            I like turning ideas into working projects—from finance
+            and healthcare tools to interactive web experiences.
+          </p>
+
+        </div>
+
+
+
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+    <section class="section education">
+
+      <div class="section-heading reveal">
+
+        <p class="eyebrow">02 / Journey</p>
+
+        <h2>
+          Education &<br>
+          <span>experience.</span>
+        </h2>
+
+      </div>
+
+
+      <div class="timeline">
+
+        <article class="timeline-row reveal">
+
+          <div class="timeline-year">
+            2022 — 2026
+          </div>
+
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+
+            <h3>
+              Engineering — Information Science
+            </h3>
+
+            <p>
+              Rajeev Institute of Technology
+            </p>
+
+            <small>
+              Built projects across Python, databases,
+              web development and AI.
+            </small>
+
+          </div>
+
+        </article>
+
+
+        <article class="timeline-row reveal">
+
+          <div class="timeline-year">
+            Internship
+          </div>
+
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+
+            <h3>
+              Python · Machine Learning · Gen AI
+            </h3>
+
+            <p>
+              Contriver
+            </p>
+
+            <small>
+              Worked on Python fundamentals, frontend development,
+              ML/NLP and Generative AI projects.
+            </small>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="section projects">
+
+      <div class="section-heading reveal">
+
+        <p class="eyebrow">
+          03 / Selected work
+        </p>
+
+        <h2>
+          Things I’ve<br>
+          <span>built.</span>
+        </h2>
+
+      </div>
+
+
+      <div class="project-list project-showcase-list">
+
+        <a class="project-card project-showcase reveal"
+          href="https://github.com/Tejascm11/Ai-Powered-Stock-Market-Simulator-with-News-Driven-and-Text-Generation.git">
+          <div class="project-preview stock-preview">
+            <div class="preview-label">AI · FINANCE</div>
+            <div class="preview-chart"><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+          <div class="project-card-body">
+            <div>
+              <p class="project-type">01 / AI · FINANCE · PYTHON</p>
+              <h3>AI-Powered Stock Market Simulator</h3>
+              <p>Interactive stock analysis and simulation using historical data, prediction models, charts and
+                news-driven text generation.</p>
+              <div class="chips"><span>Python</span><span>Streamlit</span><span>scikit-learn</span><span>yfinance</span>
+              </div>
+            </div>
+            <span class="project-arrow">↗</span>
+          </div>
+        </a>
+
+        <a class="project-card project-showcase reveal" href="https://github.com/Tejascm11/CareConnect-Ai.git">
+          <div class="project-preview care-preview">
+            <div class="preview-label">AI · HEALTHCARE</div>
+            <div class="chat-preview">
+              <span class="chat-bubble">Hello! How can I help?</span>
+              <span class="chat-bubble small">CareConnect AI</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div>
+              <p class="project-type">02 / AI · HEALTHCARE · STREAMLIT</p>
+              <h3>CareConnect AI Medical Chatbot</h3>
+              <p>A healthcare assistant interface with structured guidance, voice interaction, multilingual support and
+                nearby-hospital discovery.</p>
+              <div class="chips"><span>Python</span><span>Streamlit</span><span>AI</span><span>SQLite</span></div>
+            </div>
+            <span class="project-arrow">↗</span>
+          </div>
+        </a>
+
+        <a class="project-card project-showcase reveal" href="https://github.com/Tejascm11/EmotionalDetector.git"
+          target="_blank" rel="noopener noreferrer">
+          <div class="project-preview emotion-preview">
+            <div class="preview-label">AI · COMPUTER VISION</div>
+            <div class="emotion-preview-face">
+              <span class="emotion-eye left"></span>
+              <span class="emotion-eye right"></span>
+              <span class="emotion-mouth"></span>
+              <span class="emotion-scan"></span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div>
+              <p class="project-type">03 / AI · COMPUTER VISION · PYTHON</p>
+              <h3>EmotionalDetector</h3>
+              <p>A real-time facial emotion detection system using deep learning and computer vision to capture webcam
+                video, detect faces and classify emotions in real time.</p>
+              <div class="chips"><span>Python</span><span>Deep Learning</span><span>Computer
+                  Vision</span><span>OpenCV</span></div>
+            </div>
+            <span class="project-arrow">↗</span>
+          </div>
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="section skills">
+
+      <div class="section-heading reveal">
+        <p class="eyebrow">04 / Skills</p>
+        <h2>Tech<br><span>Stack.</span></h2>
+      </div>
+
+      <div class="tech-stack-grid reveal delay-1">
+        <div class="tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+            alt="Python"><span>Python</span></div>
+        <div class="tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+            alt="Git"><span>Git</span></div>
+        <div class="tech-card"><img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript"><span>JavaScript</span></div>
+        <div class="tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            alt="HTML5"><span>HTML5</span></div>
+        <div class="tech-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            alt="CSS3"><span>CSS3</span></div>
+        <div class="tech-card"><svg class="canva-logo" viewBox="0 0 100 100" role="img" aria-label="Canva">
+            <defs>
+              <linearGradient id="canvaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#00C4CC" />
+                <stop offset="50%" stop-color="#7D2AE8" />
+                <stop offset="100%" stop-color="#8B3DFF" />
+              </linearGradient>
+            </defs>
+            <circle cx="50" cy="50" r="46" fill="url(#canvaGradient)" />
+            <path fill="#FFFFFF"
+              d="M67.8 38.2c-4.7-4.8-11.1-7.4-18.2-7.4-13.9 0-25.3 9.8-25.3 21.9s11.4 21.9 25.3 21.9c7.1 0 13.5-2.6 18.2-7.4l-7.1-6.1c-2.8 2.8-6.6 4.5-11 4.5-7.2 0-13-5.7-13-12.9s5.8-12.9 13-12.9c4.4 0 8.2 1.7 11 4.5l7.1-6.1z" />
+          </svg><span>Canva</span></div>
+      </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section contact">
+
+      <div class="section-heading reveal">
+
+        <p class="eyebrow">
+          05 / Contact
+        </p>
+
+        <h2>
+          Let’s build<br>
+          <span>something.</span>
+        </h2>
+
+      </div>
+
+
+      <div class="contact-grid">
+
+        <p class="contact-copy reveal">
+          Have a project, opportunity or idea?
+          Reach out through any of the links.
+        </p>
+
+
+        <div class="contact-links reveal delay-1">
+
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ctejasm@gmail.com">
+            <span>Email📩</span>
+            <b>ctejasm@gmail.com ↗</b>
+          </a>
+
+          <a href="https://github.com/Tejascm11" target="_blank" rel="noreferrer">
+            <span>GitHub</span>
+            <b>github.com ↗</b>
+          </a>
+
+          <a href="https://www.linkedin.com/in/cmtejas" target="_blank" rel="noreferrer">
+            <span>LinkedIn👥</span>
+            <b>linkedin.com ↗</b>
+          </a>
+
+          <a href="#">
+            <span>Location📍</span>
+            <b>Karnataka, India</b>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <span>
+      © 2026 Tejas CM
+    </span>
+
+    <span>
+      Designed & built with curiosity.
+    </span>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
