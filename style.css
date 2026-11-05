@@ -1601,3 +1601,343 @@ footer {
     transition-duration: .01ms !important;
   }
 }
+
+
+/* =========================================================
+   CREATIVE DESIGN / CANVA PORTFOLIO
+========================================================= */
+.creative-intro {
+  max-width: 650px;
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.creative-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.creative-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--glass);
+  transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+
+.creative-card:hover {
+  transform: translateY(-7px);
+  border-color: var(--purple);
+  box-shadow: 0 20px 55px rgba(109, 50, 255, .12);
+}
+
+.creative-art {
+  position: relative;
+  isolation: isolate;
+  min-height: 290px;
+  margin: 13px;
+  padding: 27px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 14px;
+  color: #fff;
+}
+
+.poster-art {
+  background: linear-gradient(145deg, #25104c, #7c35d7 62%, #d77bff);
+}
+
+.poster-art .art-kicker,
+.poster-art .art-caption,
+.social-topline,
+.social-pill,
+.banner-small,
+.banner-bottom,
+.invite-overline,
+.invite-detail,
+.pdf-label {
+  position: relative;
+  z-index: 2;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .18em;
+}
+
+.poster-art strong {
+  position: relative;
+  z-index: 2;
+  margin: 20px 0;
+  font-size: clamp(42px, 5vw, 66px);
+  line-height: .82;
+  letter-spacing: -.07em;
+}
+
+.poster-art .art-caption {
+  margin-top: 16px;
+}
+
+.art-shape {
+  position: absolute;
+  z-index: -1;
+  width: 190px;
+  height: 190px;
+  right: -45px;
+  bottom: -35px;
+  border: 25px solid rgba(255,255,255,.17);
+  border-radius: 50%;
+  box-shadow: 0 0 0 24px rgba(255,255,255,.07);
+}
+
+.social-art {
+  background: linear-gradient(150deg, #ff9a62, #e84b83 55%, #7134a8);
+}
+
+.social-topline {
+  font-size: 8px;
+}
+
+.social-art strong {
+  position: relative;
+  z-index: 2;
+  margin: 25px 0;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: .9;
+  letter-spacing: -.06em;
+}
+
+.social-pill {
+  align-self: flex-start;
+  padding: 9px 12px;
+  border: 1px solid rgba(255,255,255,.55);
+  border-radius: 30px;
+  font-size: 8px;
+}
+
+.social-orb {
+  position: absolute;
+  z-index: -1;
+  width: 150px;
+  height: 150px;
+  right: -35px;
+  top: 35px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.17);
+  filter: blur(1px);
+}
+
+.banner-art {
+  background: linear-gradient(135deg, #102e35, #176c69 58%, #8dbd8a);
+}
+
+.banner-art strong {
+  position: relative;
+  z-index: 2;
+  margin: 17px 0;
+  font-size: clamp(42px, 5vw, 62px);
+  line-height: .85;
+  letter-spacing: -.07em;
+}
+
+.banner-line {
+  width: 65px;
+  height: 4px;
+  margin-bottom: 16px;
+  background: #e8ffb7;
+}
+
+.banner-bottom {
+  font-size: 8px;
+  letter-spacing: .1em;
+}
+
+.invite-art {
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(145deg, #492b37, #a95d70 60%, #e6a77e);
+}
+
+.invite-overline {
+  letter-spacing: .3em;
+}
+
+.invite-art strong {
+  margin: 28px 0;
+  font-family: Georgia, serif;
+  font-size: clamp(29px, 4vw, 45px);
+  line-height: 1.05;
+  font-weight: 500;
+}
+
+.invite-divider {
+  width: 70px;
+  height: 1px;
+  margin-bottom: 16px;
+  background: rgba(255,255,255,.8);
+}
+
+.invite-detail {
+  font-size: 7px;
+  letter-spacing: .12em;
+}
+
+.pdf-art {
+  background: linear-gradient(145deg, #162d4e, #315f9b 58%, #8ca9d5);
+}
+
+.pdf-art strong {
+  position: relative;
+  z-index: 2;
+  margin: 18px 0;
+  font-size: clamp(35px, 4.5vw, 53px);
+  line-height: .86;
+  letter-spacing: -.06em;
+}
+
+.pdf-lines {
+  display: grid;
+  gap: 7px;
+  width: 62%;
+}
+
+.pdf-lines i {
+  height: 3px;
+  border-radius: 5px;
+  background: rgba(255,255,255,.55);
+}
+
+.pdf-lines i:nth-child(2) { width: 78%; }
+.pdf-lines i:nth-child(3) { width: 88%; }
+
+.pdf-stamp {
+  position: absolute;
+  right: 20px;
+  bottom: 22px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255,255,255,.6);
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.creative-tools-visual {
+  position: relative;
+  min-height: 290px;
+  margin: 13px;
+  padding: 25px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  color: #fff;
+  background: radial-gradient(circle at 25% 20%, #27d4c7, transparent 38%),
+              radial-gradient(circle at 80% 75%, #a44dff, transparent 42%),
+              linear-gradient(135deg, #087fba, #5140b8 55%, #8c39bd);
+}
+
+.tools-spark {
+  font-size: 68px;
+  line-height: 1;
+  text-shadow: 0 8px 35px rgba(0,0,0,.18);
+}
+
+.tools-word {
+  margin-top: 12px;
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: -.07em;
+}
+
+.tools-subtitle {
+  margin-top: 5px;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .22em;
+}
+
+.creative-card-info {
+  min-height: 112px;
+  padding: 12px 20px 21px;
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.creative-card-info h3 {
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.creative-card-info p {
+  max-width: 330px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.creative-number {
+  flex: 0 0 auto;
+  color: var(--purple);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.creative-note {
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+@media (max-width: 1100px) {
+  .creative-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .creative-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .creative-art,
+  .creative-tools-visual {
+    min-height: 260px;
+  }
+
+  .creative-card-info {
+    min-height: 0;
+  }
+
+  .creative-intro {
+    font-size: 14px;
+  }
+}
+
+
+/* Simple digital marketing introduction section — no work gallery */
+.creative-contact {
+  display: inline-flex;
+  margin-top: 22px;
+}
+
+/* Digital marketing section action links */
+.creative-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.creative-actions .creative-contact {
+  margin-top: 0;
+}
